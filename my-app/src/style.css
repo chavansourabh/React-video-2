@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(2, 13, 36, 0.849);
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(./components/react-brands.svg);
+  background-size: 40rem;
+  background-repeat: no-repeat;
+  background-position: 650px;
+  opacity: 0.3;
+  z-index: -1;
+}
+nav {
+  align-items: center;
+  padding: 30px 25px;
+  height: 90px;
+}
+
+.logo {
+  color: rgb(10, 201, 235);
+}
+.mainBody {
+  height: 100vh;
+  margin: 0;
+}
+
+.mainBody article {
+  padding: 57px 27px;
+  position: relative;
+}
+
+.mainBody article h1 {
+  margin-top: 46px;
+  font-size: 2.8rem;
+  font-family: "Inter", sans-serif;
+}
+.mainBody article ul li {
+  padding-block: 10px;
+  line-height: 19px;
+  font-family: "Inter", sans-serif;
+}
+
+.mainBody li::marker {
+  font-size: 1.5rem;
+  color: rgb(10, 201, 235);
+}
+
+/* .bglogo {
+  position: absolute;
+  width: 30rem;
+  opacity: 0.2;
+  right: -230px;
+  top: 15rem;
+} */
+.nav-info {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+/* @media screen and (min-width: 1200px) {
+  .bglogo {
+    position: absolute;
+    right: 10%;
+  }
+} */
