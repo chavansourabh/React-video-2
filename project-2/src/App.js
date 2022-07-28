@@ -8,22 +8,15 @@ import Data from "./components/data";
 
 export default function App() {
   const dataElement = Data.map((profile) => {
-    return (
-      <Card
-        title={profile.title}
-        price={profile.price}
-        img={profile.coverImg}
-        rating={profile.stats.rating}
-        reviewCount={profile.stats.reviewCount}
-        country={profile.location}
-      />
-    );
+    return <Card key={profile.id} item={profile} />;
   });
+
   return (
-    <div className="contacts">
+    <div>
       <Navbar />
       <Hero />
-      {dataElement}
+      <section className="cards-list">{dataElement}</section>
+
       {/* <Contact
         img="./images/cat-1.jpg"
         name="Mr. Whiskerson"
