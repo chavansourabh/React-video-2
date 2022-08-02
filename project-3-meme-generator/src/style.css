@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+}
+.main-container {
+  width: 650px;
+  /* height: 650px; */
+  background-color: white;
+  margin: 10rem auto;
+  border-radius: 15px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background-color: #7f61f8;
+  padding: 16px;
+  position: relative;
+  border-radius: 15px 15px 0 0;
+  color: white;
+}
+
+.header--img {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.meme-container {
+  margin: 2.5rem;
+  position: relative;
+}
+.form {
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+.form input {
+  /* width: 48%; */
+  padding: 0.3rem;
+  border-radius: 8px;
+  border: 1px solid gray;
+  text-indent: 5px;
+}
+.form--btn {
+  /* margin-top: 1.5rem; */
+  /* width: 100%; */
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #7f61f8;
+  border: transparent;
+  color: white;
+  grid-column: 1 / -1;
+}
+
+.form--btn:hover {
+  background-color: #6b48f3;
+}
+.meme-img {
+  margin: 2rem auto;
+  margin-bottom: 3rem;
+  width: 100%;
+  border-radius: 10px;
+}
