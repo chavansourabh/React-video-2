@@ -4,14 +4,20 @@ import jokesData from "./jokesData";
 
 export default function App() {
   const jokeElement = jokesData.map((joke) => {
-    return <Joke setup={joke.setup} punchline={joke.punchline} id={joke.id} />;
+    return (
+      <Joke
+        setup={joke.setup}
+        punchline={joke.punchline}
+        id={joke.id}
+        key={joke.id}
+      />
+    );
   });
 
   return <div>{jokeElement}</div>;
 }
 
-{
-  /* <h1 className="text-center container-fluid bg-secondary p-4 text-white">
+/* <h1 className="text-center container-fluid bg-secondary p-4 text-white">
         Jokes
       </h1>
 
@@ -45,4 +51,3 @@ export default function App() {
         punchline="It’s hard to explain puns to kleptomaniacs because 
 they always take things literally."
       /> */
-}
